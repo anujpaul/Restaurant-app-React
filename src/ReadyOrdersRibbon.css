@@ -1,0 +1,39 @@
+/* src/ReadyOrdersRibbon.css */
+.ready-orders-ribbon {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 250px;
+  height: 100vh; /* Full height */
+  background-color: #fff;
+  border-left: 3px solid #6200ea; /* Purple border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 20px;
+  z-index: 1000; /* Ensure it’s above other content */
+}
+
+.ready-orders-ribbon h2 {
+  margin-top: 0;
+}
+
+.ribbon-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ribbon-item {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.ribbon-item span {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+}
